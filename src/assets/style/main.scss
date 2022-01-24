@@ -1,0 +1,94 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 1440px;
+  overflow-x: hidden;
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 50px;
+  color: #000000;
+}
+
+@media (max-width: 428px) {
+  body {
+    min-width: 390px;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+ul, li {
+  font-family: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+button {
+  font-family: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  transition: all .5s;
+}
+
+p {
+  margin: 0;
+}
+
+a, span {
+  font-family: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  text-decoration: none;
+  display: inline-block;
+  color: inherit;
+  cursor: pointer;
+  transition: all .5s;
+}
+
+button:hover,
+a:hover {
+  text-decoration: none;
+  transform: scale(1.05);
+  transition: all .5s;
+}
+
+input,
+textarea,
+button:focus {
+  outline: none;
+}
+
+label,
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button,
+textarea::-webkit-outer-spin-button,
+textarea::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
